@@ -141,6 +141,20 @@ li {
   padding-bottom: 10px;
 }
 
+.netlify-link {
+  text-decoration: none;
+  color: white;
+}
+
+.netlify-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.github-link {
+  color: #ffe779;
+}
+
 .bottom-section {
   color: white;
   text-align: center;
