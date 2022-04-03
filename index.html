@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      xs
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://kit.fontawesome.com/10d3830cba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rowdies&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <form class="city-form" id="city-form">
+      <input
+        type="search"
+        placeholder="Enter a city..."
+        id="city-input"
+        autocomplete="off"
+      />
+   <button type="submit" value ="search" id="search-button"><i class="fa fa-search" ></i></button>
+
+  </button>
+  <button type="button" class="btn btn-secondary" id="geolocation">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    Location</button>
+  
+    </form>
+    <section>
+      <div class="card">
+        <div class="emoji"> ☀️</div>
+    
+        <div class="card-body">
+          <h5 id="city">Sydney</h5>
+          <h1 class="temp-degree-symbol"> <span id="temperature">19</span>°</h1>
+          
+            <div class="units">
+              <a href="#" id="celcius">℃</a> |
+              <a href="#" id="fahrenheit">℉</a></div
+            >
+            </br>
+          <p id="date-time">
+            Sunday <br />
+
+            11:50pm
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="col-6">
+            <ul>
+              <li id="description"> Partly Cloudy </li>
+               </br>
+                </br>
+               <li class="humidity">
+              
+                 <i class="fa-solid fa-droplet"></i>
+                Humidity: <span id="humidity"></span>%</li>
+               </br>
+              <li class="wind">
+                       <i class="fa-solid fa-wind"></i>
+                Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+
+
+    </span>
+        <br />
+        <br />
+        <div class="row weather-forecast">
+          <div class="col">
+            <div class="day">
+            Monday
+             </div>
+                <div class="weather">
+            ☀️
+            </div>
+            29°c
+          </div>
+          
+          <div class="col">
+            <div class="day">
+            Tuesday 
+          </div>
+         
+             <div class="weather">
+            ☀️
+            </div>
+         
+            31°c
+          </div>
+
+          <div class="col">
+            <div class="day">
+            Wednesday
+          </div>
+       
+           <div class="weather">
+          🌤
+          </div>
+       
+          18°c
+        </div>
+         
+        <div class="col">
+          <div class="day">
+          Thursday
+          </div>
+       
+           <div class="weather">
+          🌥
+          </div>
+       
+          16°c
+        </div>
+
+          <div class="col">
+             <div class="day">
+            Friday
+            </div>
+         
+            <div class="weather">
+            🌧
+            </div>
+         
+            16°c
+          </div>
+          
+          <div class="col">
+               <div class="day">
+            Saturday
+            </div>
+         
+            <div class="weather">
+            ⛈
+            </div>
+         
+            14°c
+          </div>
+        </div>
+      </div>
+    </br>
+
+    </span>
+
+
+  <script src="src/index.js" type="text/javascript"></script>
+
+
+  </body>
+</html>
