@@ -140,3 +140,9 @@ li {
   font-size: 18px;
   padding-bottom: 10px;
 }
+
+.bottom-section {
+  color: white;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
